@@ -35,3 +35,23 @@
 	flex-wrap: wrap; /*Quebra para a próxima coluna*/
 	height: 260px;	
 }
+
+.conteudoPrincipal-cursos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+	width: 23%;
+	margin: 1%;
+}
+
+/*seletor do 4 elemento para retirar a margem direita*/
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+	margin-right: 0;	
+}
+
+/*seletor do 4n+1 elemento para retirar a margem esquerda*/
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+	margin-left: 0;	
+}
