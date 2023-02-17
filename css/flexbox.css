@@ -5,7 +5,7 @@
 }
 
 .cabecalhoPrincipal-nav{
-	display: flex;
+	display: flex;	
 }
 
 .rodapePrincipal-patrocinadores .container{
@@ -39,6 +39,7 @@
 .conteudoPrincipal-cursos{
 	display: flex;
 	flex-wrap: wrap;
+
 }
 
 .conteudoPrincipal-cursos-link{
@@ -56,14 +57,48 @@
 	margin-left: 0;	
 }
 
-.grid {
+
+/*PARTE DO MOBILE*/
+/*até telas de 768px, geralmente tablet, vai utilizar o código abaixo*/
+@media(max-width: 768px){
+.cabecalhoPrincipal-nav{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: column;
 }
 
-.box {
-  height: 50px;
-  width: 100px;
-  background-color: green;
+.cabecalhoPrincipal .container{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	align-items: initial;
+	text-align: center;
+}
+
+.conteudoPrincipal-cursos{
+	flex-direction: column;
+}
+
+.conteudoPrincipal-cursos-link{
+	width: 100%;
+}
+
+.rodapePrincipal-navMap-list{
+	height: auto;
+}
+
+.rodapePrincipal-patrocinadores .container{
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
+.rodapePrincipal-contatoForm{
+	width: auto;
+}
+
+.rodapePrincipal-patrocinadores-list{
+	width: 100%;
+	margin: 0;
+}
 }
