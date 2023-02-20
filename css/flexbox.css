@@ -57,6 +57,25 @@
 	margin-left: 0;	
 }
 
+.videoSobre .container {
+	display: flex;
+}
+
+.videoSobre-sobre{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.videoSobre-sobre-list{
+	flex-grow: 3;
+}
+
+.videoSobre-video{
+	flex-grow: 1;
+	flex-shrink: 2;
+}
 
 /*PARTE DO MOBILE*/
 /*até telas de 768px, geralmente tablet, vai utilizar o código abaixo*/
@@ -105,4 +124,13 @@
 	width: 100%;
 	margin: 0;
 }
+
+.videoSobre .container{
+	flex-direction: column;
+}
+
+.videoSobre-video{
+	margin: auto;	
+}
+
 }
